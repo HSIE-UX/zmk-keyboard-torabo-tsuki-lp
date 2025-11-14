@@ -8,7 +8,7 @@
     >;
 
     scroller {
-        layers = <4>;  // レイヤー5でスクロールを有効にする
+        layers = <5>;  // レイヤー5でスクロールを有効にする
         input-processors = <
             &zip_xy_to_scroll_mapper
             &zip_scroll_transform (INPUT_TRANSFORM_X_INVERT)
