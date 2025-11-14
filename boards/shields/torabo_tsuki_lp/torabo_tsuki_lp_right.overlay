@@ -4,7 +4,7 @@
 
 &trackball_listener {
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
-};
+
  scroller {
         layers = <4>;  //有効化するレイヤーの指定
         input-processors = 
@@ -14,7 +14,7 @@
             <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
             <&zip_scroll_scaler 1 5>;                           //スクロール量を1/4倍
     };
-
+};
 &size_s_transform {
     col-offset = <7>;
 };
